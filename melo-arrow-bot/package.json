@@ -1,0 +1,22 @@
+{
+  "name": "melo-arrow-bot",
+  "version": "1.1.1",
+  "private": true,
+  "description": "Persistent Discord arrow delivery tracker, filter, and leaderboards",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "check": "node --check src/index.js && node --check src/commands.js && node --check src/db.js && node --check src/donut-api.js && node --check src/leaderboards.js && node --check src/parser.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "discord.js": "^14.21.0",
+    "dotenv": "^16.6.1",
+    "luxon": "^3.7.1",
+    "pg": "^8.16.3"
+  }
+}
